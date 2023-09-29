@@ -10,7 +10,6 @@ To apply updates with default NixOS host, run `./update-flakes.sh` and/or `./upd
 - Install git and enable Flakes in `/etc/nixos/configuration.nix`:
 
 ```
-
   # Enable Flakes and the new command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -23,7 +22,6 @@ To apply updates with default NixOS host, run `./update-flakes.sh` and/or `./upd
   ];
   # Set default editor to vim
   environment.variables.EDITOR = "vim";
-
 ```
 
 Then apply the changes by running `sudo nixos-rebuild switch`.
@@ -32,11 +30,9 @@ Then apply the changes by running `sudo nixos-rebuild switch`.
 - Create a folder for the configurations and link a git repository:
 
 ```
-
 mkdir NixOSConfigs
 git clone https://github.com/macsiwase/nix-mainConfigs.git NixOSConfigs
 cd NixOSConfigs
-
 ```
 
 - Modify `flake.nix` if necessary then run `sudo nixos-rebuild switch --flake .#hostname` to apply the system configuration.
