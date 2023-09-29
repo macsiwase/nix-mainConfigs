@@ -45,7 +45,8 @@ Now have fun and install other packages/services.
 
 ## Useful Tips
 
-- [Find packages or services](https://search.nixos.org/packages). 
+- [Find packages or services](https://search.nixos.org/packages).
+- [NixOS Wiki](https://nixos.wiki/).
 
 ## Issues
 
