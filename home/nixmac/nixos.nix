@@ -54,7 +54,12 @@
   programs.git = {
     enable = true;
     userName = "macsiwase";
-    userEmail = "github.impairers@simplelogin.co"; 
+    userEmail = "github.impairers@simplelogin.co";
+    extraConfig = {
+      credential.helper = "${
+          pkgs.git.override { withLibsecret = true; }
+        }/bin/git-credential-libsecret";
+    };
   };
 
   # Nicely reload system units when changing configs

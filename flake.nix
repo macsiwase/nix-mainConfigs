@@ -101,7 +101,7 @@
       wallpapers = import ./home/nixmac/wallpapers;
 
       # NixOS configuration entrypoint
-      # Available through 'nixos-rebuild --flake .#your-hostname'
+      # Available through 'nixos-rebuild --flake .#hostname'
       nixosConfigurations = {
         # Main
         nixos = lib.nixosSystem {
