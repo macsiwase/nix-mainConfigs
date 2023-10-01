@@ -26,7 +26,6 @@ To apply updates with default NixOS host, run `./update-flakes.sh` and/or `./upd
 
 Then apply the changes by running `sudo nixos-rebuild switch`.
 
-
 - Create a folder for the configurations and link a git repository:
 
 ```
@@ -35,7 +34,7 @@ git clone https://github.com/macsiwase/nix-mainConfigs.git NixOSConfigs
 cd NixOSConfigs
 ```
 
-- Modify `flake.nix` if necessary then run `sudo nixos-rebuild switch --flake .#hostname` to apply the system configuration.
+- Update disk partitions in `~/NixOSConfigs/hosts/nixos/default.nix`, `~/NixOSConfigs/hosts/nixos/hardware-configuration.nix` and `flake.nix` then run `sudo nixos-rebuild switch --flake .#hostname` to apply the system configuration.
 
 - To enable home-manager, run `nix shell nixpkgs#home-manager` then run `home-manager switch --flake .#username@hostname` to apply the home configuration.
 
