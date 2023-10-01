@@ -73,8 +73,8 @@
   };
 
   # Enable swap on luks
-  boot.initrd.luks.devices."luks-67d66c80-ad88-4618-bc82-707a1c353895".device = "/dev/disk/by-uuid/67d66c80-ad88-4618-bc82-707a1c353895";
-  boot.initrd.luks.devices."luks-67d66c80-ad88-4618-bc82-707a1c353895".keyFile = "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-ea34758d-436e-4677-ab03-0d5771032839".device = "/dev/disk/by-uuid/ea34758d-436e-4677-ab03-0d5771032839";
+  boot.initrd.luks.devices."luks-ea34758d-436e-4677-ab03-0d5771032839".keyFile = "/crypto_keyfile.bin";
 
   networking.hostName = "nixos";
   # networking.wireless.enable = true;
