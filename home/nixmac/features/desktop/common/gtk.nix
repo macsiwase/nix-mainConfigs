@@ -8,7 +8,7 @@ rec {
     enable = true;
     font = {
       name = config.fontProfiles.regular.family;
-      size = 14;
+      size = 12;
     };
     theme = {
       name = "${config.colorscheme.slug}";
