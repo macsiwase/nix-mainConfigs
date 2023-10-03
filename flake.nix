@@ -6,18 +6,10 @@
     substituters = [
       "https://cache.nixos.org"
     ];
-
     extra-substituters = [
       # nix-community's cache server
       "https://nix-community.cachix.org"
     ];
-  # extra-trusted-public-keys = [
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.fire# "nix-community.cachix.org-1: ..."
-  #  ];
   };
 
   inputs = {
@@ -32,7 +24,6 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Add any other flake you might need
     hardware.url = "github:nixos/nixos-hardware/master";
 
     # Declarative themes and wallpapers with nix-colors 
@@ -49,10 +40,10 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    hyprwm-contrib = {
-      url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #hyprwm-contrib = {
+    #  url = "github:hyprwm/contrib";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
     
     #firefox-addons = {
     #  url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";

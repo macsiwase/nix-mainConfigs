@@ -17,7 +17,7 @@
   wl-mirror-pick = pkgs.callPackage ./wl-mirror-pick { };
   #o = pkgs.callPackage ./xpo { };
   tly = pkgs.callPackage ./tly { };
-  hyprslurp = pkgs.callPackage ./hyprslurp { };
+  #hyprslurp = pkgs.callPackage ./hyprslurp { };
 
   # My slightly customized plymouth theme, just makes the blue outline white
   plymouth-spinner-monochrome = pkgs.callPackage ./plymouth-spinner-monochrome { };

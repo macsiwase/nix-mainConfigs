@@ -23,7 +23,7 @@
   boot.initrd.luks.devices."luks-67d66c80-ad88-4618-bc82-707a1c353895".device = "/dev/disk/by-uuid/67d66c80-ad88-4618-bc82-707a1c353895";
   boot.initrd.luks.devices."luks-67d66c80-ad88-4618-bc82-707a1c353895".keyFile = "/crypto_keyfile.bin";
 
-  networking.hostName = "nixosm"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

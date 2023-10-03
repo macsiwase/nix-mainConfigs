@@ -21,7 +21,7 @@ in
     #};
   };
 
-  home.persistence = {
-    "/persist/home/nixmac".directories = [ ".ssh" ];
-  };
+  #home.persistence = {
+  #  "/persist/home/nixmac".directories = [ ".ssh" ];
+  #};
 }

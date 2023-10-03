@@ -8,11 +8,11 @@
     ./openssh.nix
     #./optin-persistence.nix
     ./podman.nix
-    ./sops.nix
-    ./ssh-serve-store.nix
+    #./sops.nix
+    #./ssh-serve-store.nix
     ./steam-hardware.nix
     ./systemd-initrd.nix
-    ./tailscale.nix
+    #./tailscale.nix
   ] ++ (builtins.attrValues outputs.nixosModules);
 
   home-manager.extraSpecialArgs = { inherit inputs outputs; };
@@ -21,9 +21,6 @@
     overlays = builtins.attrValues outputs.overlays;
     config = {
       allowUnfree = true;
-      permittedInsecurePackages = [
-        "openssl-1.1.1u"
-      ];
     };
   };
   

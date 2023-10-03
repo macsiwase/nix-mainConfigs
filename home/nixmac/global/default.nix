@@ -15,9 +15,6 @@ in
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);
-      permittedInsecurePackages = [
-        "openssl-1.1.1u"
-      ];
     };
   };
 
@@ -33,7 +30,16 @@ in
 
   programs = {
     home-manager.enable = true;
-    git.enable = true;
+    git = {
+      enable = true;
+      userName = "macsiwase";
+      userEmail = "github.impairers@simplelogin.co";
+      extraConfig = {
+        credential.helper = "${
+            pkgs.git.override { withLibsecret = true; }
+          }/bin/git-credential-libsecret";
+      };
+    };
   };
 
   home = {
@@ -41,6 +47,8 @@ in
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     stateVersion = lib.mkDefault "23.05";
     sessionPath = [ "$HOME/.local/bin" ];
+    sessionVariables = {
+      FLAKE = "$HOME/NixOSConfigs";
     };
   };
 

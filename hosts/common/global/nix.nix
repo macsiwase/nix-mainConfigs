@@ -32,5 +32,6 @@
     # Add nixpkgs input to NIX_PATH
     # This lets nix2 commands still use <nixpkgs>
     nixPath = [ "nixpkgs=${inputs.nixpkgs.outPath}" ];
+    #nixPath = lib.mapAttrsToList (key: value: "${key}=${value.to.path}") config.nix.registry;
   };
 }

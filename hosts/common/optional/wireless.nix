@@ -12,7 +12,7 @@
     environmentFile = config.sops.secrets.wireless.path;
     networks = { 
        "Vagabond" = {
-         psk = "LK370BMO269LL67Mx7";
+         psk = "";
        };
 #      "Marcos_5Ghz" = {
 #        pskRaw = "@MARCOS_50@";

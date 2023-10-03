@@ -3,9 +3,9 @@ let
   inherit (lib) mkIf;
   hasPackage = pname: lib.any (p: p ? pname && p.pname == pname) config.home.packages;
   hasRipgrep = hasPackage "ripgrep";
-  hasExa = hasPackage "exa";
+  hasEza = hasPackage "eza";
   hasNeovim = config.programs.neovim.enable;
-  hasEmacs = config.programs.emacs.enable;
+  #hasEmacs = config.programs.emacs.enable;
   hasNeomutt = config.programs.neomutt.enable;
   hasShellColor = config.programs.shellcolor.enable;
   hasKitty = config.programs.kitty.enable;
@@ -32,9 +32,9 @@ in
       hm = "home-manager --flake .";
       hms = "home-manager --flake . switch";
 
-      ls = mkIf hasExa "exa";
+      ls = mkIf hasEza "eza";
 
-      e = mkIf hasEmacs "emacsclient -t";
+      #e = mkIf hasEmacs "emacsclient -t";
 
       vrg = mkIf (hasNeomutt && hasRipgrep) "nvimrg";
       vim = mkIf hasNeovim "nvim";
