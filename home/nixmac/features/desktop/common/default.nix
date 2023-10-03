@@ -14,5 +14,6 @@
     ./wayland-wm
     ./appimage.nix
     ./steam-run.nix
+    ./sioyek.nix
   ];
 }
