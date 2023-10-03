@@ -36,6 +36,7 @@
       gnomeExtensions.appindicator
       flatpak
       gnome.gnome-software
+      gnome.gnome-tweaks
     ];
     
     # Exclude some GNOME applications.

@@ -61,6 +61,10 @@ in
       color19 = "#${colors.base02}";
       color20 = "#${colors.base04}";
       color21 = "#${colors.base06}";
+
+      # Advanced
+      linux_display_server = "x11";
+      allow_hyperlinks = "yes";
     };
   };
 }
