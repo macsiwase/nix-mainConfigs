@@ -2,6 +2,7 @@
 {
   imports = [
     ./global
+    ./features/desktop/common
   ];
    
   wallpaper = outputs.wallpapers.aenami-lunar;

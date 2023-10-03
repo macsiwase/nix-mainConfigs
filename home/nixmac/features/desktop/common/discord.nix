@@ -4,9 +4,9 @@ let inherit (config.colorscheme) colors;
 in {
   home.packages = with pkgs; [ discord discocss ];
 
-  home.persistence = {
-    "/persist/home/nixmac".directories = [ ".config/discord" ];
-  };
+  #home.persistence = {
+  #  "/persist/home/nixmac".directories = [ ".config/discord" ];
+  #};
 
   xdg.configFile."discocss/custom.css".text = ''
     .theme-dark {

@@ -1,15 +1,16 @@
-{{
+{
   imports = [
-    ./deluge.nix
+    #./deluge.nix
     ./discord.nix
-    ./dragon.nix
+    #./dragon.nix
     ./firefox.nix
     ./font.nix
     ./gtk.nix
-    ./kdeconnect.nix
+    #./kdeconnect.nix
     ./pavucontrol.nix
-    ./playerctl.nix
+    #./playerctl.nix
     ./qt.nix
-    ./slack.nix
+    #./slack.nix
+    ./wayland-wm
   ];
 }
