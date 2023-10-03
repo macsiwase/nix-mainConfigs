@@ -12,5 +12,7 @@
     ./qt.nix
     #./slack.nix
     ./wayland-wm
+    ./appimage.nix
+    ./steam-run.nix
   ];
 }
