@@ -16,5 +16,6 @@
     ./steam-run.nix
     ./sioyek.nix
     ./vscode.nix
+    ./mullvad-vpn.nix
   ];
 }

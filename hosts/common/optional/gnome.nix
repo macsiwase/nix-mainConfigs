@@ -33,14 +33,15 @@
   
   environment = {
     systemPackages = with pkgs; [
-      gnomeExtensions.appindicator
       flatpak
       gnome.gnome-software
       gnome.gnome-tweaks
+      gnomeExtensions.appindicator
+      gnomeExtensions.mullvad-indicator
     ];
     
     # Exclude some GNOME applications.
-    gnome.excludePackages = (with pkgs; [
+      gnome.excludePackages = (with pkgs; [
       gnome-photos
       gnome-tour
     ]) ++ (with pkgs.gnome; [
