@@ -15,6 +15,5 @@
     ./appimage.nix
     ./steam-run.nix
     ./sioyek.nix
-    ./vscode.nix
   ];
 }
