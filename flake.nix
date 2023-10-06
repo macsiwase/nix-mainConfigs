@@ -96,11 +96,7 @@
       nixosConfigurations = {
         # Main
         nixos = lib.nixosSystem {
-          modules = [
-            # > Main nixos configuration file <
-            # ./nixos/configuration.nix
-	    ./hosts/nixos
-          ];
+          modules = [ ./hosts/nixos ];
           specialArgs = { inherit inputs outputs; };
         };
 
@@ -127,10 +123,7 @@
       # Available through 'home-manager --flake .#username@hostname'
       homeConfigurations = {
         "nixmac@nixos" = lib.homeManagerConfiguration {
-	  modules = [
-          #  ./home-manager/home.nix
-	     ./home/nixmac/nixos.nix
-          ];
+	  modules = [ ./home/nixmac/nixos.nix ];
           pkgs = pkgsFor.x86_64-linux; 
           extraSpecialArgs = { inherit inputs outputs; };
           };

@@ -17,5 +17,6 @@
     ./sioyek.nix
     ./vscode.nix
     ./mullvad-vpn.nix
+    ./anki.nix
   ];
 }
